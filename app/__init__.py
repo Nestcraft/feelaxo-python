@@ -16,7 +16,6 @@ def create_app():
     api = Api(app)
 
     from . import routes    
-    routes.register_routes(api)
     routes.ai_routes(api)
 
 
