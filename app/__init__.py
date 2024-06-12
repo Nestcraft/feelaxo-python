@@ -9,7 +9,7 @@ def create_app():
     app.config.from_pyfile('../instance/config.py')
 
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:Nestcbd%4046@209.182.233.164/feelaxo'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://admin:Nestcbd%4046@209.182.233.164/feelaxo'
 
     db.init_app(app)
 
